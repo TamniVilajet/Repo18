@@ -7,12 +7,12 @@ let shoppingList = new Map([
     ["Apple", 1.5]
   ]);
   for (let key of shoppingList.entries()) {
-    let arrKey = [];
+    var arrKey = [];
     arrKey.push(key[0]);
     console.log("groceries: " + arrKey);
   }
   for (let value of shoppingList.entries()) {
-    let arrValue = [];
+    var arrValue = [];
     arrValue.push(value[1]);
     console.log("amount: " + arrValue);
   }
