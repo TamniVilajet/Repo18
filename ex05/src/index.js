@@ -23,7 +23,5 @@ let shoppingList = new Map([
   for (let [key, value] of shoppingList.entries()) {
     console.log(`['${key}', '${value}']`);
   }
-  console.log(arrKey.length);
-  console.log(arrKey.length);
 // Only change code above this line
 module.exports = { shoppingList, arrKey, arrValue };
