@@ -1,18 +1,17 @@
 let myArr = [];
+let num = multiplication(3);
 // Only change code below this line
-function* multiplication(x) {
-  for (let i = 0; i <= x; i++) {
-      x = x * 2;
-    yield myArr.push(x);
+function* multiplication(numbers) {
+  value = numbers;
+  for (let i = 0; i < numbers; i++) {
+    value = value * 2;
+    yield myArr.push(value);
   }
 }
-const num = multiplication(3);
 
-for (let i = 0; i < 3; i++) {
-  console.log(num.next());
+for (let n of num) {
+  num.next();
 }
-console.log(myArr);
+console.log(myArr)
 // Only change code above this line
 module.exports = multiplication;
-
-
